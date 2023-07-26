@@ -80,7 +80,8 @@ function equality() {
 
 
 function deletion() {
-    input2 = input2.slice(0, -1);
+    var current = toString(input2);
+    input2 = current.slice(0, -1);
     document.getElementById("current").innerHTML = input2;
 }
 
