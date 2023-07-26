@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br><br> <br> <br><br>
+    <div class="calculator">
+        <div class="input" id="inputs">
+            <p id="previousandOp"></p>
+
+            
+            <div id="current">0</div>
+        
+        </div>
+
+        <br>
+        <div id = "LinesOfInputs">
+        <div class="line">
+        <div id="clear" class="clear" onmousedown="clearing()">Clear</div>
+        <div id="delete" class="delete" onmousedown="deletion()">Delete</div>
+        </div>
+
+        <br>
+        <div class="line">
+            <div id="1" class="operandsAndNumbers" onclick="digit(1)">1</div>
+            <div id="2" class="operandsAndNumbers" onmousedown="digit(2)">2</div>
+            <div id="3" class="operandsAndNumbers" onmousedown="digit(3)">3</div>
+            <div id="division" class="operandsAndNumbers" onmousedown="operation('÷')">÷</div>
+        </div>
+        <br>
+        <div class="line">
+            <div id="4" class="operandsAndNumbers" onmousedown="digit(4)">4</div>
+            <div id="5" class="operandsAndNumbers" onmousedown="digit(5)">5</div>
+            <div id="6" class="operandsAndNumbers" onmousedown="digit(6)">6</div>
+            <div id="multiplication" class="operandsAndNumbers" onclick="operation('*')">×</div>
+        </div>
+        <br>
+        <div class="line">
+            <div id="7" class="operandsAndNumbers" onmousedown="digit(7)">7</div>
+            <div id="8" class="operandsAndNumbers" onmousedown="digit(8)">8</div>
+            <div id="9" class="operandsAndNumbers" onmousedown="digit(9)">9</div>
+            <div id="-" class="operandsAndNumbers" onmousedown="operation('-')">-</div>
+        </div>
+        <br>
+        <div class="line">
+            <div id="." class="operandsAndNumbers" onmousedown="decimalPoint()">.</div>
+            <div id="0" class="operandsAndNumbers" onmousedown="digit(0)">0</div>
+            <div id="=" class="operandsAndNumbers" onmousedown="equality()">=</div>
+            <div id="+" class="operandsAndNumbers" onmousedown="operation('+')">+</div>
+        </div>
+    </div>
+    
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
